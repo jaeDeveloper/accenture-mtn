@@ -6,6 +6,21 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.1.2/dist/js/splide-extension-grid.min.js"></script>
+  <script>
+    document.addEventListener( 'DOMContentLoaded', function () {
+      new Splide( '.splide', {
+            type   : 'loop',
+            perPage: 5,
+            autoWidth: true,
+            focus  : 'center',
+          } ).mount();
+    } );
+  </script>
 </head>
 <body>
   <app-root></app-root>

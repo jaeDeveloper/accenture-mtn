@@ -1,12 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Work Sans', sans-serif !important;
+    font-size: 16px;
+    color: #232323;
+}
+
 .body-bg {
     background: #f6cdcd;
+}
+
+body a,
+body a:hover {
+    color: #232323;
+    text-decoration: none;
 }
 
 header {
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 10%), 0 3px 11px 0 rgb(0 0 0 / 10%);
     z-index: 9;
     position: relative;
+}
+
+.navbar-menu a {
+    font-size: 16px;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+body .navbar {
+    padding: 30px 0 !important;
+}
+
+.navbar-item img {
+    border: 5px solid #ffffff;
+    position: absolute;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 10%), 0 3px 11px 0 rgb(0 0 0 / 10%);
+    top:0;
 }
 
 .landing-section {
@@ -19,6 +48,125 @@ header {
       #d6eaec 0px,
       #d6eaec 120px /* determines size */
     );
-    width: 70%;
+    width: 74%;
     margin: 0 auto;
+    height: 100%;
 }
+
+h1.title.font-weight-light {
+    margin-top: 10%;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 600;
+    color: #232323;
+    margin-left: 17%;
+}
+
+.splide {
+    margin-top: -8%;
+}
+
+.carousel-card {
+    box-sizing: border-box;
+    display: block;
+    height: 284px;
+    width: 216px;
+    margin-right: 14px !important;
+    margin-left: 13px !important;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #EBEBEB 100%);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12);
+    color: #232323;
+    font-family: "Work Sans";
+    font-size: 20px;
+    text-align: center;
+    padding-top: 40px;
+  }
+
+/* .splide__slide.is-active {
+    height: 556px;
+    width: 456px !important;
+} */
+
+button.splide__arrow.splide__arrow--prev {
+    left: 27%;
+}
+
+button.splide__arrow.splide__arrow--next {
+    right: 30%;
+}
+
+body .splide__arrow {
+    top: 95%;
+    background-color: #232323;
+    opacity: 9;
+}
+
+body .splide__arrow:hover {
+    background-color: #FFC300;
+}
+
+.splide__pagination {
+    display: none;
+}
+
+.splide__list {
+    margin-top: 150px !important;
+    margin-bottom: 150px !important;
+}
+
+.splide__arrow svg {
+    fill: #ffffff;
+}
+
+section.body-bg.is-fullheight {
+    height: 100vh;
+}
+
+.splide__slide.is-active .carousel-card {
+    box-sizing: border-box;
+    transform: scale(1.7);
+    margin-right: 110px !important;
+    margin-left: 110px !important;
+    border-bottom: 5px solid #FFC300 !important;
+    font-weight: 600;
+    /* border-radius: 16px 16px 12px 12px; */
+    background: linear-gradient(180deg, #FFFFFF 0%, #EBEBEB 100%);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12);
+}
+
+.splide__slide.is-active .carousel-card span.start-botton {
+    display: block;
+}
+
+a span.start-botton {
+    display: none;
+    text-transform: uppercase;
+    font-size: 8px !important;
+    font-weight: bold;
+}
+
+.splide__slide .carousel-card:hover {
+    background: linear-gradient(180deg, #373737 0%, #191919 100%);
+    border-radius: 8px !important;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.splide__slide .carousel-card img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.splide__slide.is-active {
+    transform: scale(1.1);
+    /* margin-left: 64px;
+    margin-right: 64px; */
+    border-radius: 8px !important;
+}
+
+/* .splide__track {
+    overflow: visible;
+} */
